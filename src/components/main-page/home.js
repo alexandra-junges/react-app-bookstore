@@ -7,7 +7,7 @@ const BookStoreHome = () => {
         <div className="container center">
             <h2>Welcome to BookStore</h2>
             <p>A platform to search about your preferred books</p>
-            <Button >
+            <Button>
                 See Books
             </Button>
         </div>
