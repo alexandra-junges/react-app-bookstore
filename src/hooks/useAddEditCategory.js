@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { useHistory, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { 
     createCategory,
     updateCategory,
     getCategoryById
- } from "../components/_services/category-service";
+ } from "../_services/category-service";
 
 export const useAddEditCategory = () => {
-    const history = useHistory()
+    const history = useNavigate()
     const { id } = useParams()
     const [successAlert, setSuccessAlert] = useState(false)
     const [editAlert, setEditAlert] = useState(false)

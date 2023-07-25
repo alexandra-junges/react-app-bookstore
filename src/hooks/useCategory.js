@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { 
     getCategories,
     searchCategory,
     deleteCategory 
-} from "../components/_services/category-service";
-import { getBookByCategoryId } from "../components/_services/book-service";
+} from "../_services/category-service";
+import { getBookByCategoryId } from "../_services/book-service";
+
 
 export const useCategory = () => {
     const history = useNavigate()
@@ -96,7 +97,6 @@ export const useCategory = () => {
             })
             .catch((error) => {
                 console.error("Error fetching categories:", error)
-                setBooksList([])
             })
         }
     }

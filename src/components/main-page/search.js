@@ -12,7 +12,9 @@ const SearchResults = ({ onSearch }) => {
 
   return ( 
     <InputGroup className="mt-5">
-      <InputGroup.Text>🔍</InputGroup.Text>
+      <InputGroup.Text>
+        <span role="img" aria-label="Search">🔍</span>
+      </InputGroup.Text>
       <Form.Control
         placeholder="Search"
         aria-label="Search"

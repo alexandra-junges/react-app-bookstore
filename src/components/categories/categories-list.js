@@ -1,3 +1,4 @@
+import React  from 'react';
 import { useCategory } from "../../hooks/useCategory";
 import { Button, Alert } from "react-bootstrap";
 import SearchResults from "../main-page/search";
@@ -14,7 +15,7 @@ function CategoriesList() {
     } = useCategory()
 
     return ( 
-        <>
+        <div>
             {deleteAlert && (
                 <Alert
                     className="mt-3"
@@ -75,7 +76,7 @@ function CategoriesList() {
             ) : (
                 <p className="mt-5 text-center">No categories found.</p>
             )}
-        </>
+        </div>
      )
 }
  
