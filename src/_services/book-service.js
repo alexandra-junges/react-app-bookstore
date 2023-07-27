@@ -6,7 +6,7 @@ export const getBooks = async () => {
           return books.data
         } catch (error) {
           console.error("Error fetching books:", error)
-          throw new Error("Failed to connect to the server. Please check your network connection.")
+          throw error
         }
 }
 
@@ -16,7 +16,7 @@ export const getBookById = async (id) => {
             return book.data
         } catch (error) {
           console.error("Error fetching book:", error)
-          throw new Error("Failed to connect to the server. Please check your network connection.")
+          throw error
         }
 }
 
