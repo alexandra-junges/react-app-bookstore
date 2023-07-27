@@ -9,7 +9,7 @@ import {
 import formatDate from '../utils/utilityDate'
 
 export const useAddEditBooks = () => {
-    const history = useNavigate()
+    const navigate = useNavigate()
     const { id } = useParams()
     const [categoryList, setCategoryList] = useState([])
     const [successAlert, setSuccessAlert] = useState(false)
@@ -139,7 +139,7 @@ export const useAddEditBooks = () => {
     )
 
     const onCancel = () => {
-        history.push('/bookslist')
+        navigate('/bookslist')
     }
 
     return {

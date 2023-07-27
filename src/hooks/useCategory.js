@@ -9,7 +9,7 @@ import { getBookByCategoryId } from "../_services/book-service";
 
 
 export const useCategory = () => {
-    const history = useNavigate()
+    const navigate = useNavigate()
     const [categoryList, setCategoryList] = useState([])
     const [deleteAlert, setDeleteAlert] = useState(false)
 
@@ -69,11 +69,11 @@ export const useCategory = () => {
     }
 
     const handleCreateCategory = () => {
-        history.push('/addeditcategory')
+        navigate('/addeditcategory')
     }
 
     const onEditButton = (id) => {
-        history.push(`/addeditcategory/${id}`)
+        navigate(`/addeditcategory/${id}`)
     }
 
     const handleSearch = (searchedValue) => {

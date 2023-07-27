@@ -7,7 +7,7 @@ import {
 } from "../_services/book-service";
 
 export const useBooks = () => {
-    const history = useNavigate()
+    const navigate = useNavigate()
     const [booksList, setBooksList] = useState([])
     const [deleteAlert, setDeleteAlert] = useState(false)
 
@@ -50,11 +50,11 @@ export const useBooks = () => {
     }
     
     const handleCreateBook = () => {
-        history.push('/addeditbook')
+        navigate('/addeditbook')
     }
     
     const onEditButton = (id) => {
-        history.push(`/addeditbook/${id}`)
+        navigate(`/addeditbook/${id}`)
     }
     
     const handleSearch = (searchedValue) => {

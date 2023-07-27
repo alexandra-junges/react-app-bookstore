@@ -7,7 +7,7 @@ import {
  } from "../_services/category-service";
 
 export const useAddEditCategory = () => {
-    const history = useNavigate()
+    const navigate = useNavigate()
     const { id } = useParams()
     const [successAlert, setSuccessAlert] = useState(false)
     const [editAlert, setEditAlert] = useState(false)
@@ -84,7 +84,7 @@ export const useAddEditCategory = () => {
     }
 
     const onCancel = () => {
-        history.push('/categorieslist')
+        navigate('/categorieslist')
     }
 
     return {
