@@ -4,7 +4,7 @@ import {
     getBooks,
     searchBookWithCategory,
     deleteBook 
-} from "../_services/book-service";
+} from "../components/_services/book-service";
 
 export const useBooks = () => {
     const navigate = useNavigate()

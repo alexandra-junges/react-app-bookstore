@@ -4,8 +4,8 @@ import {
     getCategories,
     searchCategory,
     deleteCategory 
-} from "../_services/category-service";
-import { getBookByCategoryId } from "../_services/book-service";
+} from "../components/_services/category-service";
+import { getBookByCategoryId } from "../components/_services/book-service";
 
 
 export const useCategory = () => {

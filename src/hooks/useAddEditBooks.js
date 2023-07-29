@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
-import { getCategories } from "../_services/category-service";
+import { getCategories } from "../components/_services/category-service";
 import { 
     createBook, 
     updateBook, 
     getBookById 
-} from "../_services/book-service";
+} from "../components/_services/book-service";
 import formatDate from '../utils/utilityDate'
 
 export const useAddEditBooks = () => {
